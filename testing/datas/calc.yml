@@ -1,0 +1,44 @@
+add:
+  datas:
+    - [ 1, 1, 2 ]
+    - [ 1000, 10000, 11000 ]
+    - [ -1, -1, -2 ]
+    - [ 0, 0, 0 ]
+  ids:
+    - 'int_case'
+    - 'bignum_case'
+    - 'minus_case'
+    - 'zero_case'
+
+div:
+  datas:
+    - [ -1, 2, -0.5 ]
+    - [ 0, 2, 0 ]
+    - [ 1, 2, 0.5 ]
+    - [ 2, 2, 1 ]
+    - [ 10, 2, 5 ]
+    - [ 100000, 2, 50000 ]
+
+sub:
+  datas:
+    - [ -1, 1, -2 ]
+    - [ 3, 1, 2 ]
+    - [ 100000, 1, 99999 ]
+    - [ 0, 0, 0 ]
+  ids:
+    - 'minus_case'
+    - 'int_case'
+    - 'bignum_case'
+    - 'zero_case'
+
+mul:
+  datas:
+    - [ -1, -1, 1 ]
+    - [ 1, 2, 2 ]
+    - [ 100000, 1, 100000 ]
+    - [ 10, 0, 0 ]
+  ids:
+    - 'minus_case'
+    - 'int_case'
+    - 'bignum_case'
+    - 'zero_case'
