@@ -8,10 +8,10 @@ import allure
 def get_datas():
     with open("./datas/calc.yml") as f:
         datas = yaml.safe_load(f)
-    add_datas = datas["add"]["datas"]
-    add_ids = datas["add"]["ids"]
-    print(add_datas)
-    print(add_ids)
+    # add_datas = datas["add"]["datas"]
+    # add_ids = datas["add"]["ids"]
+    # print(add_datas)
+    # print(add_ids)
     return datas
 
 @allure.feature("测试模块")
