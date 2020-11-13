@@ -1,0 +1,24 @@
+#!/usr/bin/env python
+# -*- coding: UTF-8 -*-
+"""
+=================================================
+@Project -> File   ：HogwartsSEDT15 -> conftest
+@IDE    ：PyCharm
+@Author ：Jeff Gao
+@Date   ：2020/11/12 11:21
+==================================================
+"""
+import os
+import signal
+import subprocess
+
+import pytest
+
+
+@pytest.fixture(scope='module', autouse=True)
+def record_video():
+    command = "scrcpy --record tmp.mp4"
+    p = subprocess.Popen(command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+    print(p)
+    yield
+    os.kill(p.pid, signal.CTRL_C_EVENT)
